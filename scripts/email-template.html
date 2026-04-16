@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BCDR Milestone Reminder</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6f8;font-family:'Segoe UI',Arial,sans-serif;">
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background-color:#f4f6f8;padding:32px 0;">
+    <tr>
+      <td align="center">
+
+        <!-- Email card -->
+        <table width="620" cellpadding="0" cellspacing="0" border="0"
+               style="background-color:#ffffff;border-radius:8px;
+                      box-shadow:0 2px 8px rgba(0,0,0,0.08);overflow:hidden;">
+
+          <!-- ── HEADER BANNER ─────────────────────────────────────── -->
+          <tr>
+            <td style="background-color:#00893d;padding:28px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <!-- Syngenta wordmark (text fallback) -->
+                    <span style="font-size:22px;font-weight:700;color:#ffffff;
+                                 letter-spacing:1px;">Syngenta</span>
+                    <span style="font-size:11px;color:#b8e8cc;
+                                 margin-left:10px;letter-spacing:2px;">
+                      GROUP
+                    </span>
+                  </td>
+                  <td align="right">
+                    <span style="font-size:12px;color:#d0f0e0;
+                                 font-weight:500;letter-spacing:1px;">
+                      BCDR PROGRAM
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ── ALERT STRIP ────────────────────────────────────────── -->
+          <tr>
+            <td style="background-color:#fff3cd;border-left:4px solid #f0a500;
+                       padding:12px 40px;">
+              <span style="font-size:13px;color:#856404;font-weight:600;">
+                &#9888;&nbsp; Action Required — Milestone Past Due
+              </span>
+            </td>
+          </tr>
+
+          <!-- ── BODY ───────────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:36px 40px 24px 40px;">
+
+              <p style="margin:0 0 18px 0;font-size:15px;color:#1a1a1a;">
+                Dear <strong>{{Name}}</strong>,
+              </p>
+
+              <p style="margin:0 0 18px 0;font-size:14px;color:#444444;line-height:1.7;">
+                This is an automated reminder from the <strong>Syngenta BCDR (Business
+                Continuity &amp; Disaster Recovery) Program</strong>. Our records indicate
+                that the milestone assigned to you has not yet been completed.
+              </p>
+
+              <!-- Milestone details card -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                     style="background-color:#f8f9fa;border:1px solid #e0e0e0;
+                            border-radius:6px;margin:20px 0;">
+                <tr>
+                  <td style="padding:20px 24px;">
+                    <table width="100%" cellpadding="6" cellspacing="0" border="0">
+                      <tr>
+                        <td style="font-size:12px;color:#888888;
+                                   font-weight:600;text-transform:uppercase;
+                                   letter-spacing:0.5px;width:38%;">
+                          Milestone
+                        </td>
+                        <td style="font-size:14px;color:#1a1a1a;font-weight:600;">
+                          {{Milestone}}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-size:12px;color:#888888;
+                                   font-weight:600;text-transform:uppercase;
+                                   letter-spacing:0.5px;border-top:1px solid #e8e8e8;
+                                   padding-top:10px;">
+                          Due Date
+                        </td>
+                        <td style="font-size:14px;color:#c0392b;font-weight:600;
+                                   border-top:1px solid #e8e8e8;padding-top:10px;">
+                          {{DueDate}}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-size:12px;color:#888888;
+                                   font-weight:600;text-transform:uppercase;
+                                   letter-spacing:0.5px;border-top:1px solid #e8e8e8;
+                                   padding-top:10px;">
+                          Application
+                        </td>
+                        <td style="font-size:14px;color:#1a1a1a;
+                                   border-top:1px solid #e8e8e8;padding-top:10px;">
+                          {{ApplicationName}}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-size:12px;color:#888888;
+                                   font-weight:600;text-transform:uppercase;
+                                   letter-spacing:0.5px;border-top:1px solid #e8e8e8;
+                                   padding-top:10px;">
+                          Status
+                        </td>
+                        <td style="font-size:14px;border-top:1px solid #e8e8e8;
+                                   padding-top:10px;">
+                          <span style="background-color:#fde8e8;color:#c0392b;
+                                       padding:3px 10px;border-radius:12px;
+                                       font-size:12px;font-weight:600;">
+                            {{Status}}
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:0 0 18px 0;font-size:14px;color:#444444;line-height:1.7;">
+                Timely completion of BCDR milestones is critical to ensuring
+                Syngenta's operational resilience. Please log in to the BCDR portal
+                and complete this milestone at your earliest convenience.
+              </p>
+
+              <!-- CTA button -->
+              <table cellpadding="0" cellspacing="0" border="0" style="margin:24px 0;">
+                <tr>
+                  <td style="background-color:#00893d;border-radius:5px;">
+                    <a href="{{BcdrPortalUrl}}"
+                       style="display:inline-block;padding:12px 28px;
+                              font-size:14px;font-weight:600;color:#ffffff;
+                              text-decoration:none;letter-spacing:0.3px;">
+                      Open BCDR Portal &rarr;
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:0 0 8px 0;font-size:13px;color:#666666;line-height:1.6;">
+                If you believe this notification is in error, or if you need an
+                extension, please contact your BCDR coordinator or reply to this email.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- ── DIVIDER ─────────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:0 40px;">
+              <hr style="border:none;border-top:1px solid #e8e8e8;margin:0;" />
+            </td>
+          </tr>
+
+          <!-- ── FOOTER ─────────────────────────────────────────────── -->
+          <tr>
+            <td style="padding:20px 40px 28px 40px;background-color:#fafafa;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 4px 0;font-size:12px;
+                               color:#888888;line-height:1.6;">
+                      <strong style="color:#555555;">Syngenta BCDR Program Team</strong><br/>
+                      This is an automated notification — please do not reply directly.<br/>
+                      For support:
+                      <a href="mailto:bcdr-support@syngenta.com"
+                         style="color:#00893d;text-decoration:none;">
+                        bcdr-support@syngenta.com
+                      </a>
+                    </p>
+                  </td>
+                  <td align="right" style="vertical-align:bottom;">
+                    <span style="font-size:11px;color:#bbbbbb;">
+                      &copy; {{Year}} Syngenta Group
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /Email card -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
