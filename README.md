@@ -31,13 +31,19 @@ Clean separation — templating handled by Claude, delivery handled by MCP serve
 ---
 
 ## 📦 What’s Included
-
-- ✅ Skill definition (`bcdr-reminder-v2`)
-- ✅ Embedded master HTML email template
-- ✅ Personalization logic (placeholders like `{{Name}}`, `{{Milestone}}`, etc.)
-- ✅ Email subject generation rules
-- ✅ Validation rules before sending
-- ✅ Preview & approval workflow
+```bash
+bcdr-reminder-v2/
+├── SKILL.md ← Direction & orchestration logic (required)
+├── references/ ← Blueprints & rules (optional but recommended)
+│ ├── agent-config.md
+│ ├── generate-email-subject.md
+│ ├── identify-pending-users.md
+│ ├── personalize-template.md
+│ ├── prepare-payload.md
+│ └── validate-email.md
+└── scripts/
+└── email-template.html
+```
 
 
 ---
@@ -70,4 +76,12 @@ Options:
 - Sends fully rendered HTML  
 
 ### 7. Summary Report
-- Displays sent, skipped, and failed emails  
+- Displays sent, skipped, and failed emails
+
+##📥 Installation
+- For Claude.ai Users
+- Download the latest release: csv-data-summarizer.zip
+- Go to Claude.ai → Settings → Capabilities → Skills
+- Upload the zip file
+- Enable the skill
+- Done! ✨
